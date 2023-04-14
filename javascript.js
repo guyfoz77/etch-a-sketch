@@ -1,4 +1,4 @@
-let mainContainer = document.querySelector('.mainContainer');
+const mainContainer = document.querySelector('.mainContainer');
 let resolution = 10;
 
 function createPixel() {
@@ -16,8 +16,15 @@ function createRow() {
     return row;
 }
 
+//adds rows to the main container.
 for (let i = resolution; i >= 1; i--) {
     mainContainer.appendChild(createRow());
 }
 
-mainContainer.appendChild(createRow());
+//adds event listeners to all the pixels to change colour on mouseover.
+const pixels = document.querySelectorAll('.pixel');
+pixels.forEach(pixel => {
+    pixel.addEventListener('mouseover', () => {
+        pixel.classList.add('white');
+    })
+})
