@@ -1,5 +1,6 @@
 const mainContainer = document.querySelector('.mainContainer');
-let resolution = 10;
+let resolution = 50;
+let opacityChange = 0.3;
 
 function createPixel() {
     let pixel = document.createElement('div');
@@ -27,6 +28,6 @@ const pixels = document.querySelectorAll('.pixel');
 pixels.forEach(pixel => {
     pixel.style.opacity = 1;
     pixel.addEventListener('mouseover', function () {
-        this.style.opacity -= 0.1;
+        this.style.opacity -= opacityChange;
     })
 })

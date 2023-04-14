@@ -22,12 +22,8 @@ body {
 
 .pixel {
     flex: auto;
-    border-style: solid;
-    border-width: 1px;
-    border-color: grey;
+    /* border-style: solid; */
+    /* border-width: 1px; */
+    /* border-color: grey; */
     background-color: black;
-}
-
-.white {
-    background-color: white;
 }
