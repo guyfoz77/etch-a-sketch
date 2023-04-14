@@ -17,10 +17,10 @@ body {
 
 .row {
     display: flex;
+    flex: auto;
 }
 
 .pixel {
-    height: 17px;
     flex: auto;
     border-style: solid;
     border-color: grey;

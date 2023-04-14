@@ -1,7 +1,5 @@
-//make sure pixels are square and fit perfectly within the maincontainer.
-
 let mainContainer = document.querySelector('.mainContainer');
-let resolution = 16;
+let resolution = 10;
 
 function createPixel() {
     let pixel = document.createElement('div');
