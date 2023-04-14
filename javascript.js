@@ -22,10 +22,11 @@ for (let i = resolution; i >= 1; i--) {
 }
 
 
-//adds event listeners to all the pixels to change colour on mouseover.
+//adds event listeners to all the pixels to change opacity on mouseover.
 const pixels = document.querySelectorAll('.pixel');
 pixels.forEach(pixel => {
+    pixel.style.opacity = 1;
     pixel.addEventListener('mouseover', function () {
-        this.style.backgroundColor = 'white';
+        this.style.opacity -= 0.1;
     })
 })
