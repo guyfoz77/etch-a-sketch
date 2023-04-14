@@ -1,4 +1,4 @@
-//run createPixel() 16 times to fill the div with pixels.
+//make sure pixels are square and fit perfectly within the maincontainer.
 
 let mainContainer = document.querySelector('.mainContainer');
 let resolution = 16;
@@ -18,6 +18,8 @@ function createRow() {
     return row;
 }
 
-mainContainer.appendChild(createRow());
+for (let i = resolution; i >= 1; i--) {
+    mainContainer.appendChild(createRow());
+}
 
-// mainContainer.appendChild(createPixel());
+mainContainer.appendChild(createRow());

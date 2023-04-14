@@ -20,7 +20,7 @@ body {
 }
 
 .pixel {
-    height: 23px;
+    height: 17px;
     flex: auto;
     border-style: solid;
     border-color: grey;
