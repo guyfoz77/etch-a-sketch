@@ -21,10 +21,11 @@ for (let i = resolution; i >= 1; i--) {
     mainContainer.appendChild(createRow());
 }
 
+
 //adds event listeners to all the pixels to change colour on mouseover.
 const pixels = document.querySelectorAll('.pixel');
 pixels.forEach(pixel => {
-    pixel.addEventListener('mouseover', () => {
-        pixel.classList.add('white');
+    pixel.addEventListener('mouseover', function () {
+        this.style.backgroundColor = 'white';
     })
 })
