@@ -1,10 +1,11 @@
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: coral;
+    background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);
 }
 .mainContainer {
     width: 400px;
@@ -28,4 +29,22 @@ body {
     /* border-width: 1px; */
     /* border-color: grey; */
     background-color: black;
+}
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+ul {
+    font-size: 20px;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li:hover {
+    color: orange;
 }
