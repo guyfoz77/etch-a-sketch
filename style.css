@@ -1,10 +1,15 @@
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);
+<<<<<<< HEAD
+=======
+    gap: 30px;
+>>>>>>> UI-buttons
 }
 .mainContainer {
     width: 400px;
@@ -28,4 +33,43 @@ body {
     /* border-width: 1px; */
     /* border-color: grey; */
     background-color: black;
+}
+
+.buttonContainer,
+.buttonSubContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonContainer{
+    gap: 40px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(31, 107, 179);
+}
+
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+ul {
+    font-size: 20px;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li:hover,
+.rainbow:hover {
+    color: orange;
+}
+
+.rainbowActive {
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
 }
