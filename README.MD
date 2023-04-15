@@ -1,6 +1,6 @@
-#Etch-a-Sketch
+# Etch-a-Sketch
 
-##This is an etch-a-sketch style game. Move your mouse across the black canvas and see what happens!
+## This is an etch-a-sketch style game. Move your mouse across the black canvas and see what happens!
 
 ---
 
