@@ -6,6 +6,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);
+    gap: 30px;
 }
 .mainContainer {
     width: 400px;
@@ -30,6 +31,22 @@ body {
     /* border-color: grey; */
     background-color: black;
 }
+
+.buttonContainer,
+.buttonSubContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonContainer{
+    gap: 40px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(31, 107, 179);
+}
+
 
 p {
     font-size: 25px;

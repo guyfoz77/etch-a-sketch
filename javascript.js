@@ -1,6 +1,8 @@
 const mainContainer = document.querySelector('.mainContainer');
 let resolution = 50;
 let opacityChange = 0.3;
+let containerSize = 700;
+const sizeButtons = document.querySelectorAll('.sizeButton');
 
 function createPixel() {
     let pixel = document.createElement('div');
@@ -29,5 +31,14 @@ pixels.forEach(pixel => {
     pixel.style.opacity = 1;
     pixel.addEventListener('mouseover', function () {
         this.style.opacity -= opacityChange;
+    })
+})
+
+sizeButtons.forEach(button => {
+    button.addEventListener('click', function (e) {
+        containerSize = e.target.dataset.size;
+        mainContainer.style.width = containerSize;
+        mainContainer.style.height = containerSize;
+        pixels.forEach(pixel => pixel.style.opacity = 1);   //resets all pixels opacity - do we need to do this for just a resize?
     })
 })
