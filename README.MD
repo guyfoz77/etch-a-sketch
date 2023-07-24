@@ -1,8 +1,7 @@
 # Etch-a-Sketch
 
-## This is an etch-a-sketch style game. Move your mouse across the black canvas and see what happens!
+**Live preview: https://guyfoz77.github.io/etch-a-sketch/**
 
----
 
 You can change the size of the canvas by clicking the buttons.
 
